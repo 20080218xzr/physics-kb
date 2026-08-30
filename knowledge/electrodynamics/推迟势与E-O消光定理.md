@@ -67,19 +67,6 @@ L_zL_\pm|l,m\rangle
 (m\pm1)\hbar L_\pm|l,m\rangle.
 $$
 
-因此
-
-$$
-L_\pm|l,m\rangle
-\propto
-|l,m\pm1\rangle.
-$$
-
-$$
-[L^2,L_\pm]=0,
-$$
-
-可知升降操作不会改变 $l$，只改变 $m$。
 
 ---
 
