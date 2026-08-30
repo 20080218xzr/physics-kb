@@ -1,51 +1,37 @@
-# Angular Momentum Ladder Operators
+# 推迟势与E-O消光定理
 
 ## Physical intuition
 
-角动量升降算符
+无穷大平面上线电流分布$\bm{K}$=$K_0e^{-i\omega t}\bm{e_x}$推迟势有：
 
 $$
-L_\pm=L_x\pm iL_y
+\begin{equation}\bm{A}=\begin{cases}\frac{\mu_0K_0}{2k_0}e^{-i\omega t+ik_oz+\frac{\pi}{2}}\bm{e_x}&z>0\\
+\frac{\mu_0K_0}{2k_0}e^{-i\omega t-ik_oz+\frac{\pi}{2}}\bm{e_x}&z<0\end{cases}\end{equation}
 $$
 
-可以把一个角动量本征态
+产生类似于电磁横波的正交电磁场。
 
-$$
-|l,m\rangle
-$$
+从此观点认知光波在界面的反射与折射作用：反射光与折射光是介质极化产生时谐电流从而有电磁横波产生，完全不需要麦克斯韦方程。
 
-变成具有不同 $m$ 的另一个角动量本征态。
-
-直观上，它们在角动量态空间中实现了
-
-$$
-m\rightarrow m\pm1.
-$$
-
-它们不是简单地“创造/湮灭粒子”，而是在角动量多重态内部连接不同的量子态。
 
 ---
 
 ## Why
 
-直接求解 $L^2$ 和 $L_z$ 的本征值问题需要处理球坐标下的偏微分方程。
+观察表达式可知推迟势函数结果依赖于观察点绝对值，分别对应介质内部的折射光和向外在真空中传播的反射光。
 
-引入升降算符后，可以利用角动量的对易关系进行纯代数处理。
+其中对每一薄层的介质，线电流密度：
+$$\begin{equation}\bm{J}=-i\omega \bm{P_0}e^{-i\omega t-ikz}\end{equation}$$
 
-关键关系是
+将介质切成薄层$dz$的叠加电流辐射积分即是最终期望结果。
 
-$$
-[L_z,L_\pm]=\pm\hbar L_\pm.
-$$
+---
 
-因此，如果
+## Question
 
-$$
-L_z|l,m\rangle=m\hbar|l,m\rangle,
-$$
+- $\mathcal{Q_1}:$ 如何理解 (2) 的指数因子？
 
-那么 $L_\pm|l,m\rangle$ 仍然是 $L_z$ 的本征态，
-但对应的本征值发生变化。
+最初我理解为
 
 ---
 
@@ -89,8 +75,6 @@ L_\pm|l,m\rangle
 |l,m\pm1\rangle.
 $$
 
-进一步结合
-
 $$
 [L^2,L_\pm]=0,
 $$
@@ -101,22 +85,20 @@ $$
 
 ## Connections
 
-- 角动量代数
-- 对易关系
-- 旋转对称性
-- 角动量简并
-- 球谐函数
-- 自旋
-- 量子谐振子的升降算符
+- 推迟势与辐射
+- 菲涅耳公式
+- 介质极化
+- 麦克斯韦方程
 
 ---
 
 ## Source
 
-Shankar, *Principles of Quantum Mechanics*,
-Chapter 12, Angular Momentum.
+- 王振林, *现代电动力学*,
+*6.2*, P312.
 
-具体章节/公式编号待进一步核对。
+- Zangwill, *Modern Electrodynamics*,
+*20.9.1*, P763
 
 ---
 
