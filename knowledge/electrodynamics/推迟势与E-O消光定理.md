@@ -5,16 +5,15 @@
 无穷大平面上线电流分布$\bm{K}$=$K_0e^{-i\omega t}\bm{e_x}$推迟势有：
 
 $$
-\begin{equation}\bm{A}=\begin{cases}\frac{\mu_0K_0}{2k_0}e^{-i\omega t+ik_oz+\frac{\pi}{2}}\bm{e_x}&z>0\\
-\frac{\mu_0K_0}{2k_0}e^{-i\omega t-ik_oz+\frac{\pi}{2}}\bm{e_x}&z<0\end{cases}\end{equation}
+\begin{equation}\bm{A}=\begin{cases}\frac{\mu_0K_0}{2k_0}e^{-i\omega t+ik_0z+\frac{\pi}{2}}\bm{e_x}&z>0\
+\frac{\mu_0K_0}{2k_0}e^{-i\omega t-ik_0z+\frac{\pi}{2}}\bm{e_x}&z<0\end{cases}\end{equation}
 $$
 
 产生类似于电磁横波的正交电磁场。
 
 从此观点认知光波在界面的反射与折射作用：反射光与折射光是介质极化产生时谐电流从而有电磁横波产生，完全不需要麦克斯韦方程。
 
-
----
+-----
 
 ## Why
 
@@ -25,50 +24,35 @@ $$\begin{equation}\bm{J}=-i\omega \bm{P_0}e^{-i\omega t-ikz}\end{equation}$$
 
 将介质切成薄层$dz$的叠加电流辐射积分即是最终期望结果。
 
----
+-----
 
 ## Question
 
 - $\mathcal{Q_1}:$ 如何理解 (2) 的指数因子？
 
-最初我理解为
+最初我理解为k即为介质中波矢$nk_0$，则此因子就是考虑了推迟的影响。然而，正确的理解应该是波矢是未知待求的，此因子是来源于时谐电场在介质中相位变化进而改变强度。
 
----
+- $\mathcal{Q_2}:$ 如何理解辐射在介质中的传播速度？
+
+最初我理解为辐射传播速度即是光波在介质中仍为光速，然而在此理论中，辐射传播速度仍为c,折射率的影响是多个线电流密度薄板互相干涉影响的宏观结果。
+
+-----
 
 ## Derivation
 
-从
+先考虑介质外一点$(0,0,z_0)$,$z_0＞0$,由 （1） 的结论并积分，可得:
 
-$$
-[L_z,L_x]=i\hbar L_y,
-\qquad
-[L_z,L_y]=-i\hbar L_x
-$$
+$$\begin{equation}\bm{A}=i\omega \frac{\mu_0\bm{P_0}}{2k_0(k+k_0)}e^{-i\omega t+ik_0z_0}\end{equation}$$
 
-出发，定义
+再考虑介质内一点$(0,0,z_0)$,$z_0＜0$,注意此处有绝对值影响，故得到两项:
 
-$$
-L_\pm=L_x\pm iL_y.
-$$
+$$\begin{equation}\bm{A}=i\omega \frac{\mu_0\bm{P_0}}{2k_0}(\frac{
+e^{-i\omega t-ik_0z_0}{k-k_0}-\frac{
+2k_0e^{-i\omega t-ikz_0}{k^2-k_0^2})\end{equation}$$
 
-于是
+观察到两项，第一项指数因子和入射光波一致
 
-$$
-[L_z,L_\pm]
-=
-\pm\hbar L_\pm.
-$$
-
-作用在 $|l,m\rangle$ 上：
-
-$$
-L_zL_\pm|l,m\rangle
-=
-(m\pm1)\hbar L_\pm|l,m\rangle.
-$$
-
-
----
+-----
 
 ## Connections
 
@@ -77,17 +61,16 @@ $$
 - 介质极化
 - 麦克斯韦方程
 
----
+-----
 
 ## Source
 
 - 王振林, *现代电动力学*,
-*6.2*, P312.
-
+  *6.2*, P312.
 - Zangwill, *Modern Electrodynamics*,
-*20.9.1*, P763
+  *20.9.1*, P763
 
----
+-----
 
 ## Status
 
