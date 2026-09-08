@@ -2,7 +2,12 @@
 
 ## Physical intuition
 
+考虑自旋$frac{1}{2}$粒子，时谐磁场:
+$$\begin{equation}\bm{B}=Bcos(\omega t)**x**-Bsin(\omega t)**y**+B_0**z**\end{equation}$$
 
+其中B$\ll$B_0，经典力学指出若以$-\omega**z**$为旋转参考系分析可得磁矩在磁场中发生进动，即以固定的方向为轴旋转。
+
+可以采用相似的思路考虑
 
 -----
 
