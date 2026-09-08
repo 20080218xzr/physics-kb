@@ -2,23 +2,27 @@
 
 ## Physical intuition
 
-考虑自旋$frac{1}{2}$粒子，时谐磁场:
-$$\begin{equation}\bm{B}=Bcos(\omega t)**x**-Bsin(\omega t)**y**+B_0**z**\end{equation}$$
+考虑自旋$\frac{1}{2}$粒子，时谐磁场:
+$$\begin{equation}\bm{B}=Bcos(\omega t)\bm{i}-Bsin(\omega t)\bm{j}+B_0 \bm{k}\end{equation}$$
 
-其中B$\ll$B_0，经典力学指出若以$-\omega**z**$为旋转参考系分析可得磁矩在磁场中发生进动，即以固定的方向为轴旋转。
+其中$B\ll B_0$，经典力学指出若以$-\omega\bm{k}$为旋转参考系分析可得磁矩在磁场中发生进动，即以一固定的方向为轴旋转。
 
-可以采用相似的思路考虑
+在量子力学计算中，难以求解此条件下态的时间演化方程
+$$\begin{equation}i\hbar\frac{d}{dt}\vert\psi\rangle=\hat H\vert\psi\rangle\end{equation}$$
+
+因此考虑在旋转坐标系下求解以对应经典情形，最后再将结果转回去。
 
 -----
 
 ## Why
 
-观察表达式可知推迟势函数结果依赖于观察点绝对值，分别对应介质内部的折射光和向外在真空中传播的反射光。
+先考虑经典情形：变换后有磁场
+$$\begin{equation}\bm{B'}=B\bm{i_r}+B_0 \bm{k}\end{equation}$$
+取代$xOy$平面时谐磁场的是径向不变磁场，直接对应简单情形。
 
-其中对每一薄层的介质，线电流密度：
-$$\begin{equation}\bm{J}=-i\omega \bm{P_0}e^{-i\omega t-ikz}dz\end{equation}$$
+再对量子情况：
 
-将介质切成薄层$dz$的叠加电流辐射积分即是最终期望结果。
+
 
 -----
 

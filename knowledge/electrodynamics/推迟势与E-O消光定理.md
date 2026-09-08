@@ -47,14 +47,13 @@ $$\begin{equation}\bm{A}=i\omega \frac{\mu_0\bm{P_0}}{2k_0(k+k_0)}e^{-i\omega t+
 再考虑介质内一点$(0,0,z_0)$，$z_0＜0$,注意此处有绝对值影响，故得到两项:
 
 $$\begin{equation}\bm{A}=i\omega \frac{\mu_0\bm{P_0}}{2k_0}(\frac{
-e^{-i\omega t-ik_0z_0}}{k-k_0}-\frac{
-2k_0e^{-i\omega t-ikz_0}}{k^2-k_0^2})\end{equation}$$
+e^{-i\omega t-ik_0z_0}}{k-k_0}-\frac{2k_0e^{-i\omega t-ikz_0}}{k^2-k_0^2})\end{equation}$$
 
 由此计算电场，观察到两项，第一项指数因子和入射光波一致，然而出射光仅一束，因此第一项对应的是要将入射光波抵消以达到“消光”的作用，这便是所谓的*The Ewald-Oseen Extinction Theorm* ( *E-O消光定理* )，由此即可解出原本位置待求的波矢$k=nk_0$，极化强度$P_0=2\varepsilon_0(n-1)E_0$。对于第二项便是透射光电场，可得透射率：
-$\begin{equation}t=\frac{2}{n+1}\end{equation}$
+$$\begin{equation}t=\frac{2}{n+1}\end{equation}$$
 
 将$P_0$结果代入（4）即可得到反射率：
-$\begin{equation}r=\frac{n-1}{n+1}\end{equation}$
+$$\begin{equation}r=\frac{n-1}{n+1}\end{equation}$$
 
 结果均与菲涅耳公式一致，由此可见，通过电磁辐射推导是独立自洽的理论。
 
